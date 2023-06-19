@@ -1,9 +1,14 @@
 {
   "private": true,
+  "name": "Create Banner Module",
+  "version": "0.1.0",
+  "homepage": "https://evgtretyakov.github.io/create_banner_module",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.9.5",
@@ -20,6 +25,7 @@
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
     "@types/redux-logger": "3.0.9",
+    "gh-pages": "^5.0.0",
     "redux-logger": "3.0.6",
     "typescript": "5.1.3"
   }
